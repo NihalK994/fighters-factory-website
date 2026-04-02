@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fighters Factory | Combat Sports Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+
+body{font-family:Roboto;background:#050505;color:white}
+
+header{
+background:rgba(0,0,0,.95);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 7%;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+border-bottom:1px solid #e11d2e;
+}
+
+.logo{font-family:Oswald;font-size:26px;font-weight:700;letter-spacing:3px}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-weight:500;
+font-size:15px;
+}
+
+nav a:hover{color:#e11d2e}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.95)),url('https://images.unsplash.com/photo-1549719386-74dfcbf7dbed');
+background-size:cover;
+padding:20px;
+}
+
+.hero h1{
+font-family:Oswald;
+font-size:75px;
+letter-spacing:4px;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+color:#ccc
+}
+
+.btn{
+margin-top:30px;
+padding:14px 35px;
+border:none;
+background:#e11d2e;
+color:white;
+font-weight:600;
+border-radius:6px;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#b31222;
+transform:scale(1.05);
+}
+
+.section{
+padding:100px 8%;
+text-align:center;
+}
+
+.section h2{
+font-family:Oswald;
+font-size:42px;
+margin-bottom:20px;
+}
+
+.section p.desc{
+max-width:700px;
+margin:auto;
+color:#bbb;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:#101010;
+padding:30px;
+border-radius:14px;
+transition:.4s;
+border:1px solid #1f1f1f
+}
+
+.card:hover{
+transform:translateY(-10px);
+border:1px solid #e11d2e
+}
+
+.card h3{
+font-family:Oswald;
+margin-bottom:10px;
+}
+
+.trainer img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.price{
+font-size:38px;
+margin:15px;
+font-family:Oswald
+}
+
+.highlight{
+border:2px solid #e11d2e;
+transform:scale(1.05)
+}
+
+.stats{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:60px;
+margin-top:40px
+}
+
+.stat h3{
+font-size:45px;
+font-family:Oswald;
+color:#e11d2e
+}
+
+.gallery img{
+width:100%;
+border-radius:12px;
+transition:.4s
+}
+
+.gallery img:hover{
+transform:scale(1.07)
+}
+
+.schedule table{
+width:100%;
+border-collapse:collapse;
+margin-top:30px
+}
+
+.schedule th,.schedule td{
+padding:16px;
+border:1px solid #222
+}
+
+.schedule th{background:#e11d2e}
+
+form{
+max-width:650px;
+margin:auto;
+margin-top:30px
+}
+
+input,textarea{
+width:100%;
+padding:14px;
+margin:10px 0;
+background:#0f0f0f;
+border:1px solid #2a2a2a;
+color:white;
+border-radius:8px
+}
+
+footer{
+background:black;
+padding:40px;
+text-align:center;
+border-top:1px solid #e11d2e;
+margin-top:80px
+}
+
+.tag{
+background:#e11d2e;
+padding:6px 14px;
+border-radius:20px;
+font-size:13px;
+display:inline-block;
+margin-bottom:15px
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">FIGHTERS FACTORY</div>
+<nav>
+<a href="#about">About</a>
+<a href="#programs">Programs</a>
+<a href="#coaches">Coaches</a>
+<a href="#schedule">Schedule</a>
+<a href="#pricing">Plans</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>BUILD FIGHTERS</h1>
+<p>Discipline • Respect • Strength • Confidence</p>
+<button class="btn">Start Free Trial</button>
+</section>
+
+<section class="section" id="about">
+<h2>Elite Combat Training Center</h2>
+<p class="desc">A performance driven fight club designed for athletes, beginners and fitness enthusiasts. Structured programs inspired by professional fight camps.</p>
+
+<div class="stats">
+<div class="stat">
+<h3>150+</h3>
+<p>Active Members</p>
+</div>
+
+<div class="stat">
+<h3>5+</h3>
+<p>Years Training</p>
+</div>
+
+<div class="stat">
+<h3>20+</h3>
+<p>Competitors</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="programs">
+<h2>Programs</h2>
+<p class="desc">Structured training based on real fight preparation and athletic conditioning.</p>
+
+<div class="grid">
+<div class="card">
+<div class="tag">Striking</div>
+<h3>Boxing</h3>
+<p>Footwork, defense, bag drills and live sparring.</p>
+</div>
+
+<div class="card">
+<div class="tag">Striking</div>
+<h3>Kickboxing</h3>
+<p>Power kicks, combos and endurance conditioning.</p>
+</div>
+
+<div class="card">
+<div class="tag">Combat</div>
+<h3>MMA</h3>
+<p>Integrated grappling and striking systems.</p>
+</div>
+
+<div class="card">
+<div class="tag">Fitness</div>
+<h3>Transformation</h3>
+<p>Fat loss and athletic body development.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="coaches">
+<h2>Coaching Staff</h2>
+
+<div class="grid">
+<div class="card trainer">
+<img src="https://images.unsplash.com/photo-1521417531039-4ba6b1b1b5b0">
+<h3>Head Coach</h3>
+<p>Fight strategy and conditioning specialist.</p>
+</div>
+
+<div class="card trainer">
+<img src="https://images.unsplash.com/photo-1549476464-37392f717541">
+<h3>Striking Coach</h3>
+<p>Technical boxing and kickboxing instructor.</p>
+</div>
+
+<div class="card trainer">
+<img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba">
+<h3>Strength Coach</h3>
+<p>Mobility and performance training expert.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section schedule" id="schedule">
+<h2>Weekly Schedule</h2>
+
+<table>
+<tr>
+<th>Time</th>
+<th>Class</th>
+<th>Coach</th>
+</tr>
+
+<tr>
+<td>6:00 AM</td>
+<td>Conditioning</td>
+<td>Fitness Coach</td>
+</tr>
+
+<tr>
+<td>7:30 AM</td>
+<td>Boxing Fundamentals</td>
+<td>Head Coach</td>
+</tr>
+
+<tr>
+<td>5:00 PM</td>
+<td>Kickboxing Drills</td>
+<td>Striking Coach</td>
+</tr>
+
+<tr>
+<td>6:30 PM</td>
+<td>MMA Sparring</td>
+<td>Head Coach</td>
+</tr>
+
+</table>
+</section>
+
+<section class="section" id="pricing">
+<h2>Membership</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Beginner</h3>
+<div class="price">₹1500</div>
+<p>Group classes</p>
+<button class="btn">Join Now</button>
+</div>
+
+<div class="card highlight">
+<h3>Fighter Plan</h3>
+<div class="price">₹3000</div>
+<p>All classes + sparring</p>
+<button class="btn">Join Now</button>
+</div>
+
+<div class="card">
+<h3>Personal Coaching</h3>
+<div class="price">₹5000</div>
+<p>Private sessions</p>
+<button class="btn">Join Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section class="section gallery">
+<h2>Gym Moments</h2>
+
+<div class="grid">
+<img src="https://images.unsplash.com/photo-1555597673-b21d5c935865">
+<img src="https://images.unsplash.com/photo-1517649763962-0c623066013b">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<img src="https://images.unsplash.com/photo-1517438322307-e67111335449">
+</div>
+
+</section>
+
+<section class="section" id="contact">
+<h2>Join The Fight Team</h2>
+<p class="desc">Start your journey. Book a trial session.</p>
+
+<form>
+<input placeholder="Full Name">
+<input placeholder="Phone Number">
+<input placeholder="Email">
+<textarea rows="5" placeholder="Your goal"></textarea>
+<button class="btn">Submit</button>
+</form>
+
+<p style="margin-top:40px">Upper Bagdogra | West Bengal</p>
+<p>Instagram: @the_fighters_factory</p>
+
+</section>
+
+<footer>
+<h3 style="font-family:Oswald;margin-bottom:10px">THE FIGHTERS FACTORY</h3>
+<p>Train Hard • Fight Smart • Stay Humble</p>
+<p style="margin-top:10px;font-size:13px;color:#888">Website concept demo</p>
+</footer>
+
+</body>
+</html>
